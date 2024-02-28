@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div>-------MENU-------</div>
+<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-16 py-3">
+                    <span class="sr-only">Image</span>
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Product
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Qty
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Price
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Action
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="p-4">
+                </td>
+                <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                    Hamburguesa con papas
+                </td>
+                <td class="px-6 py-4">
+                    <div class="flex items-center">
+                        <div>
+                            <input type = "number" id="burger"  onclick="" class="bg-gray-50 w-14 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block px-2.5 py-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="0" required />
+                        </div>
+                    </div>
+                </td>
+                <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                    $2.00
+                </td>
+                <td class="px-6 py-4">
+                    <button onclick="burgers()">Agregar</button>
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="p-4">
+                </td>
+                <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                    Tacos de birria
+                </td>
+                <td class="px-6 py-4">
+                    <div class="flex items-center">
+                        <div class="ms-3">
+                            <input type="number" id="tacos" class="bg-gray-50 w-14 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block px-2.5 py-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="0" required />
+                        </div>
+                    </div>
+                </td>
+                <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                    $5.00
+                </td>
+                <td class="px-6 py-4">
+                    <button onclick="tacos()">Agregar</button>
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="p-4">
+                </td>
+                <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                    Nachos
+                </td>
+                <td class="px-6 py-4">
+                        <div class="ms-3">
+                            <input type="number" id="nachos" class="bg-gray-50 w-14 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block px-2.5 py-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="0" required />
+                        </div>
+                    </div>
+                </td>
+                <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                    $1.50
+                </td>
+                <td class="px-6 py-4">
+                    <button onclick="nachos()">Agregar</button>
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="p-4">
+                </td>
+                <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                    Coca-Cola
+                </td>
+                <td class="px-6 py-4">
+                    <div class="flex items-center">
+                        <div>
+                            <input type="number" id="cocas" class="bg-gray-50 w-14 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block px-2.5 py-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="0" required />
+                        </div>
+                    </div>
+                </td>
+                <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                    $0.50
+                </td>
+                <td class="px-6 py-4">
+                    <button onclick="cocas()">Agregar</button>
+                </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                <td class="p-4">
+                <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                    Sodas de sabores
+                </td>
+                <td class="px-6 py-4">
+                    <div class="flex items-center">
+                        <div>
+                            <input type="number" id="otrasSodas" class="bg-gray-50 w-14 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block px-2.5 py-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="0" required />
+                        </div>
+                    </div>
+                </td>
+                <td class="px-6 py-4 font-semibold text-gray-900 dark:text-white">
+                    $0.25
+                </td>
+                <td class="px-6 py-4">
+                    <button onclick="otrasSodas()">Agregar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div>
+    ---PEDIDOS PENDIENTE----
+    <table id = "mitabla" border="1" >
+        <tr>
+        <th>Elementos</th>
+        <th>Cantidad</th>
+        </tr>
+        <tr>
+        <td>Hamburguesa con papas</td>        
+        <td><input id = "cuanto" >
+        </tr>
+        <tr>
+            <td>Tacos de birria</td>
+            <td><input id = "cuanto2" >
+        </tr>
+        <tr>
+            <td>Nachos</td>
+            <td><input id = "cuanto3" >
+        </tr>
+        <tr>
+            <td>Coca-Cola</td>
+            <td><input id = "cuanto4" >
+        </tr>
+        <tr>
+            <td>Sodas de sabores</td>
+            <td><input id = "cuanto5" > 
+        </tr>
+        </table>
+        <button onclick="resetearPedido()">Cocinandose...</button>
+</div>
+<div></div>
+    <script src="main.js"></script>
+</body>
+</html>
