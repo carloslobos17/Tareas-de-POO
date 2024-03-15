@@ -16,7 +16,27 @@
         <label id="descripi">-</label>
         <br>
     </div>
-    <script src=""></script>
+    <script>
+            var urlParams = new URLSearchParams(window.location.search)
+
+        var nombre1 = urlParams.get("nombre") 
+        var fecha1 = urlParams.get("fecha")   
+        var genero1 = urlParams.get("genero")   
+        var departamento1 = urlParams.get("departamento")   
+        var ciudad1 = urlParams.get("ciudad")   
+        var telefono1 = urlParams.get("telefono")   
+        var descripcion1 = urlParams.get("descripcion")   
+
+        document.getElementById("nombre").innerText = nombre1
+        document.getElementById("fecha").innerText = "Fecha de nacimiento:" + fecha1 
+        document.getElementById("genero").innerText = "Genero:" + genero1
+        document.getElementById("dept").innerText = "Departamento:" + departamento1
+        document.getElementById("ciudad").innerText = "Ciudad:" + ciudad1
+        document.getElementById("telefono").innerText = "Telefono:" + telefono1
+        document.getElementById("descrip").innerText = "Descripcion:" + descripcion1
+    
+    </script>
+    <script src="/login/js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
 </body>

@@ -52,6 +52,23 @@ function mostrar(){
     document.getElementById("telefonoi").value = tel
     let des = document.getElementById("descrip").value
     document.getElementById("descripi").value = des
-
 }
 
+function informacion(){
+    let nombre = document.getElementById("nombre").value
+    let fecha = document.getElementById("fecha").value
+    let genero = document.getElementById("genero").value
+    let departamento = document.getElementById("dept").value
+    let ciudad = document.getElementById("ciudad").value
+    let telefono = document.getElementById("telefono").value
+    let descripcion = document.getElementById("descrip").value
+    
+    var url = "perfil.html?nombre=" + encodeURIComponent(nombre)+
+                "&fecha=" + encodeURIComponent(fecha)+
+                "&genero" + encodeURIComponent(genero)+
+                "&departamento" + encodeURIComponent(departamento)+
+                "&ciudad" + encodeURIComponent(ciudad)+
+                "&telefono" + encodeURIComponent(telefono)+
+                "&descripcion" + encodeURIComponent(descripcion);
+            window.location.href = url;
+}
