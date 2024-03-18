@@ -22,10 +22,29 @@
         <label for="descrip">Descripcion</label>
         <input type="text" name="" id="descrip">
         <br>
-        <input type="button" value="Mostrar datos" onclick="informacion()" >
+        <input type="button" value="Editar datos" onclick="informacion()" >
         
     </div>
-
+    <script>
+        var urlParams = new URLSearchParams(window.location.search)
+    
+    var nombre = urlParams.get('nombre')
+    var fecha = urlParams.get('fecha')
+    var genero = urlParams.get('genero')
+    var departamento = urlParams.get('dept')
+    var ciudad = urlParams.get('ciudad')
+    var telefono = urlParams.get('telefono')
+    var descripcion = urlParams.get('descrip')
+    
+    document.getElementById('nombre').value = nombre
+    document.getElementById('fecha').value = fecha
+    document.getElementById('genero').value= genero
+    document.getElementById('dept').value =  departamento
+    document.getElementById('ciudad').value = ciudad
+    document.getElementById('telefono').value =  telefono       
+    document.getElementById('descrip').value =  descripcion
+    
+    </script>
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>

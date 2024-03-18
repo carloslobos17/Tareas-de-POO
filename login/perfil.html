@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <label id="nombre">-</label> 
+        <label id="fecha">-</label>
+        <label id="genero">-</label>
+        <label id="dept">-</label>
+        <label id="ciudad">-</label>
+        <label id="telefono">-</label>
+        <label id="descrip">-</label>
+        <input type="button" value="Editar informacion" onclick="enviar()">
+        <br>
+    </div>
+    <script>
+            var urlParams = new URLSearchParams(window.location.search)
+
+        var nombre1 = urlParams.get("nombre") 
+        var fecha1 = urlParams.get("fecha")   
+        var genero1 = urlParams.get("genero")   
+        var departamento1 = urlParams.get("dept")   
+        var ciudad1 = urlParams.get("ciudad")   
+        var telefono1 = urlParams.get("telefono")   
+        var descripcion1 = urlParams.get("descrip")   
+
+        document.getElementById("nombre").innerText = nombre1
+        document.getElementById("fecha").innerText = "Fecha de nacimiento: " + fecha1 
+        document.getElementById("genero").innerText = "Genero: " + genero1
+        document.getElementById("dept").innerText = "Departamento: " + departamento1
+        document.getElementById("ciudad").innerText = "Ciudad: " + ciudad1
+        document.getElementById("telefono").innerText = "Telefono: " + telefono1
+        document.getElementById("descrip").innerText = "Descripcion: " + descripcion1
+    function enviar() {
+      var url = 'editar.html?nombre=' + encodeURIComponent(nombre1) +
+                '&fecha=' + encodeURIComponent(fecha1) +
+                '&genero=' + encodeURIComponent(genero1) +
+                '&dept=' + encodeURIComponent(departamento1) +
+                '&ciudad=' + encodeURIComponent(ciudad1) +
+                '&telefono=' + encodeURIComponent(telefono1) +
+                '&descrip=' + encodeURIComponent(descripcion1);
+
+      window.location.href = url;
+    }
+    </script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+</body>
+</html>
