@@ -1,0 +1,14 @@
+{
+  "name": "correo",
+  "version": "1.0.0",
+  "description": "Para enviar correos, hopefully",
+  "main": "main.js",
+  "scripts": {
+    "test": "npm version"
+  },
+  "author": "Jane",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^6.9.13"
+  }
+}
